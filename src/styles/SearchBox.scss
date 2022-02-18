@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./_mixins";
+
+.search-box {
+  display: flex;
+  margin-bottom: 40px;
+  input {
+    border: 1px solid $color-grey;
+    border-radius: 10px;
+    color: $color-dark;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 16px 128px 16px 32px;
+  }
+  .search-button {
+    @include button;
+  }
+}

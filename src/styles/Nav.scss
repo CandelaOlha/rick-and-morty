@@ -1,0 +1,12 @@
+@import "./_variables.scss";
+
+.navbar {
+  align-items: center;
+  background-color: $color-primary;
+  display: flex;
+  height: 80px;
+  padding: 40px;
+  .main-title {
+    color: $color-light;
+  }
+}

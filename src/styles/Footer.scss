@@ -1,0 +1,30 @@
+@import "./_variables.scss";
+
+footer {
+  align-items: center;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  text-align: center;
+  .credits {
+    color: $color-dark;
+    margin-bottom: 20px;
+  }
+  .social-media {
+    display: flex;
+    .item {
+      list-style-type: none;
+      margin: 10px;
+      .link {
+        align-items: center;
+        background-color: $color-primary;
+        border-radius: 50px;
+        color: $color-light;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+    }
+  }
+}

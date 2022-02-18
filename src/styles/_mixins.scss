@@ -1,0 +1,14 @@
+// Buttons
+
+@mixin button {
+  background-color: $color-primary;
+  border: none;
+  border-radius: 10px;
+  color: $color-light;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 32px;
+  &:hover {
+    background-color: $color-primary-stronger;
+  }
+}

@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.character-card {
+  background-color: $color-dark;
+  border-radius: 10px;
+  display: flex;
+  margin: 20px;
+  max-width: 480px;
+  img {
+    border-radius: 10px 0 0 10px;
+    max-width: 200px;
+  }
+  .text-container {
+    color: $color-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 280px;
+    .character-details {
+      align-items: center;
+      display: flex;
+      margin: 10px 0;
+      .status {
+        border-radius: 50px;
+        margin-right: 10px;
+        height: 10px;
+        width: 10px;
+      }
+      .alive {
+        background-color: $color-primary;
+      }
+      .dead {
+        background-color: $color-dead-character;
+      }
+    }
+    .location {
+      color: $color-grey;
+    }
+  }
+}
