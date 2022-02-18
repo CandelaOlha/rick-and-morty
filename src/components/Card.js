@@ -5,7 +5,7 @@ const Card = ({image, name, status, species, location}) => {
         <article className="character-card">
             <img src={image} />
             <div className="text-container">
-                <h2>{name}</h2>
+                <h2 className="character-name">{name}</h2>
                 <div className="character-details">
                     <div className={`status ${status === "Alive" ? "alive" : "dead"}`}></div>
                     <p>{status} - {species}</p>

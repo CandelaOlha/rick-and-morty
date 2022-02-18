@@ -6,6 +6,12 @@
   display: flex;
   margin: 20px;
   max-width: 480px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .character-name {
+    color: $color-secondary;
+  }
   img {
     border-radius: 10px 0 0 10px;
     max-width: 200px;
