@@ -1,9 +1,10 @@
-import "../styles/MainSection.scss";
+import "../styles/Characters.scss";
 import Card from "./Card";
 import SearchBox from "./SearchBox";
 import {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
-const MainSection = () => {
+const Characters = () => {
     const [characters, setCharacters] = useState([]);
     const [inputValue, setInputValue] = useState("");
     const [search, setSearch] = useState("");
@@ -19,24 +20,26 @@ const MainSection = () => {
     const handleClick = () => setSearch(inputValue);
 
     return (
-        <main className="main-section">
+        <main className="characters-section">
             <SearchBox 
             handleChange = {handleChange}
             handleClick = {handleClick}
             />
             <div className="cards-container">
                 {characters.map(character => (
-                <Card 
-                image = {character.image}
-                name = {character.name}
-                status = {character.status}
-                species = {character.species}
-                location = {character.location.name}
-                />
+                <Link to={`characters/${character.id}`} className="card-link">
+                    <Card 
+                    image = {character.image}
+                    name = {character.name}
+                    status = {character.status}
+                    species = {character.species}
+                    location = {character.location.name}
+                    />
+                </Link>
                 ))}
             </div>
         </main>
     )
 }
 
-export default MainSection;
+export default Characters;

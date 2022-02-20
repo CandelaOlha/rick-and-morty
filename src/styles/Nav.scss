@@ -5,8 +5,26 @@
   background-color: $color-primary;
   display: flex;
   height: 80px;
+  justify-content: space-between;
   padding: 40px;
-  .main-title {
-    color: $color-light;
+  .home-link {
+    text-decoration: none;
+    .main-title {
+      color: $color-light;
+    }
+  }
+  .menu {
+    display: flex;
+    li {
+      list-style-type: none;
+      margin: 0 10px;
+      .menu-link {
+        color: $color-light;
+        text-decoration: none;
+        &:hover {
+          color: $color-dark;
+        }
+      }
+    }
   }
 }
