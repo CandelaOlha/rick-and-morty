@@ -1,0 +1,17 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+.characters-main-view-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .characters-main-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-template-rows: auto;
+    grid-row-gap: 40px;
+    max-width: $section-max-width;
+  }
+}

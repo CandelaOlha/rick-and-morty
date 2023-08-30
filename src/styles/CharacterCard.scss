@@ -1,0 +1,11 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+.character-card {
+  align-items: center;
+  background-color: $color-dark-gray;
+  color: $color-light;
+  display: flex;
+  max-width: 500px;
+}
