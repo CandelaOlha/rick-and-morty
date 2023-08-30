@@ -1,0 +1,35 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+footer {
+  align-items: center;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  .author {
+    color: $color-dark-gray;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .social-media-icons {
+    display: flex;
+    .social-media-item {
+      list-style-type: none;
+      margin: 10px;
+      .social-media-link {
+        align-items: center;
+        background-color: $color-dark-gray;
+        border-radius: 100%;
+        color: $color-light;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+      }
+    }
+  }
+}
