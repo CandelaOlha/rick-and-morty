@@ -1,0 +1,36 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+.header {
+  align-items: center;
+  background-color: $color-green;
+  display: flex;
+  justify-content: center;
+  .navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: $section-max-width;
+    padding: 20px;
+    width: 100%;
+    .homepage-link {
+      color: $color-light;
+      text-decoration: none;
+      .page-title {
+        font-weight: 600;
+      }
+    }
+    .nav-menu {
+      display: flex;
+      .nav-menu-item {
+        list-style-type: none;
+        margin: 10px;
+        .nav-menu-link {
+          color: $color-light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
