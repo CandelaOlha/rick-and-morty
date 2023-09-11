@@ -4,8 +4,10 @@
 
 .characters-main-view-container {
   align-items: center;
+  background-color: $color-background;
   display: flex;
   justify-content: center;
+  padding: 100px 0;
   .characters-main-view {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -5,7 +5,48 @@
 .character-card {
   align-items: center;
   background-color: $color-dark-gray;
+  border-radius: $border-radius;
   color: $color-light;
   display: flex;
-  max-width: 500px;
+  height: 220px;
+  max-width: 508px;
+  .character-image {
+    border-radius: $border-radius 0 0 $border-radius;
+    height: 100%;
+  }
+  .character-info {
+    padding: 20px;
+    .character-name {
+      font-size: 24px;
+      margin-bottom: $margin-bottom-text;
+    }
+    .character-status {
+      align-items: center;
+      display: flex;
+      margin-bottom: $margin-bottom-text;
+      .character-status-color {
+        border-radius: 100%;
+        height: 8px;
+        margin-right: 8px;
+        width: 8px;
+      }
+      .alive {
+        background-color: $color-alive;
+      }
+      .dead {
+        background-color: $color-dead;
+      }
+      .unknown {
+        background-color: $color-unknown;
+      }
+    }
+    .character-container {
+      margin-bottom: $margin-bottom-text;
+      .character-title {
+        color: $color-light-gray;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
