@@ -21,15 +21,18 @@
         font-weight: 600;
       }
     }
-    .nav-menu {
+    .switch-mode-button {
+      align-items: center;
+      background-color: $color-light-green;
+      border: none;
+      border-radius: 5px;
+      color: $color-light;
+      cursor: pointer;
+      font-size: 16px;
       display: flex;
-      .nav-menu-item {
-        list-style-type: none;
-        margin: 10px;
-        .nav-menu-link {
-          color: $color-light;
-          text-decoration: none;
-        }
+      padding: 10px;
+      .switch-mode-icon {
+        margin-right: 10px;
       }
     }
   }
