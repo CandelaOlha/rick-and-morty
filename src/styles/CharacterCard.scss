@@ -3,22 +3,21 @@
 @import "./reset";
 
 .character-card {
-  align-items: center;
   background-color: $color-dark-gray;
   border-radius: $border-radius;
   color: $color-light;
   display: flex;
-  height: 220px;
+  flex-direction: column;
   margin-bottom: 40px;
-  width: 508px;
+  max-width: 250px;
   .character-image {
-    border-radius: $border-radius 0 0 $border-radius;
-    height: 100%;
+    border-radius: $border-radius $border-radius 0 0;
   }
   .character-info {
+    min-height: 180px;
     padding: 20px;
     .character-name {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: $margin-bottom-text;
     }
     .character-status {
@@ -41,9 +40,9 @@
         background-color: $color-unknown;
       }
     }
-    .character-container {
+    .character-location-container {
       margin-bottom: $margin-bottom-text;
-      .character-title {
+      .location-title {
         color: $color-light-gray;
         font-weight: 500;
         margin-bottom: 5px;

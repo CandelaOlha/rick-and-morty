@@ -1,5 +1,5 @@
 const Locations = () => {
-  return <h1>Locations</h1>;
+  return <h2>Locations</h2>;
 };
 
 export default Locations;

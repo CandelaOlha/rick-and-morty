@@ -27,13 +27,9 @@ const CharacterCard = ({ character }) => {
             {character.status} - {character.species}
           </p>
         </div>
-        <div className="character-container">
-          <p className="character-title">First seen in:</p>
-          <p className="character-text">{character.origin.name}</p>
-        </div>
-        <div className="character-container">
-          <p className="character-title">Last known location:</p>
-          <p className="character-text">{character.location.name}</p>
+        <div className="character-location-container">
+          <p className="location-title">Last known location:</p>
+          <p className="location-text">{character.location.name}</p>
         </div>
       </div>
     </article>
