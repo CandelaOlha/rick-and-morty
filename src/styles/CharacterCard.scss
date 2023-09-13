@@ -9,7 +9,8 @@
   color: $color-light;
   display: flex;
   height: 220px;
-  max-width: 508px;
+  margin-bottom: 40px;
+  width: 508px;
   .character-image {
     border-radius: $border-radius 0 0 $border-radius;
     height: 100%;

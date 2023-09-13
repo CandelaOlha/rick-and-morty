@@ -2,14 +2,13 @@
 @import "./mixins.scss";
 @import "./reset";
 
-.characters-main-view-container {
+.episodes-main-view-container {
   align-items: center;
   background-color: $color-background;
   display: flex;
   justify-content: center;
   padding: 100px 0;
-  .characters-main-view {
-    align-items: center;
+  .episodes-main-view {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

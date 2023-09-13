@@ -1,0 +1,28 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+.episode-card {
+  background-color: $color-dark-gray;
+  border-radius: $border-radius;
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 200px;
+  .episode-icon {
+    font-size: 24px;
+  }
+  .episode-info {
+    .episode-air-date {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .episode-name {
+      font-size: 18px;
+    }
+  }
+}
