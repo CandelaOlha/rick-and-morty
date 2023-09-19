@@ -2,50 +2,53 @@
 @import "./mixins.scss";
 @import "./reset";
 
-.character-card {
-  background-color: $color-dark-gray;
-  border-radius: $border-radius;
-  color: $color-light;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-  max-width: 250px;
-  .character-image {
-    border-radius: $border-radius $border-radius 0 0;
-  }
-  .character-info {
-    min-height: 180px;
-    padding: 20px;
-    .character-name {
-      font-size: 20px;
-      margin-bottom: $margin-bottom-text;
+.character-card-link {
+  text-decoration: none;
+  .character-card {
+    background-color: $color-dark-gray;
+    border-radius: $border-radius;
+    color: $color-light;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    max-width: 250px;
+    .character-image {
+      border-radius: $border-radius $border-radius 0 0;
     }
-    .character-status {
-      align-items: center;
-      display: flex;
-      margin-bottom: $margin-bottom-text;
-      .character-status-color {
-        border-radius: 100%;
-        height: 8px;
-        margin-right: 8px;
-        width: 8px;
+    .character-info {
+      min-height: 180px;
+      padding: 20px;
+      .character-name {
+        font-size: 20px;
+        margin-bottom: $margin-bottom-text;
       }
-      .alive {
-        background-color: $color-alive;
+      .character-status {
+        align-items: center;
+        display: flex;
+        margin-bottom: $margin-bottom-text;
+        .character-status-color {
+          border-radius: 100%;
+          height: 8px;
+          margin-right: 8px;
+          width: 8px;
+        }
+        .alive {
+          background-color: $color-alive;
+        }
+        .dead {
+          background-color: $color-dead;
+        }
+        .unknown {
+          background-color: $color-unknown;
+        }
       }
-      .dead {
-        background-color: $color-dead;
-      }
-      .unknown {
-        background-color: $color-unknown;
-      }
-    }
-    .character-location-container {
-      margin-bottom: $margin-bottom-text;
-      .location-title {
-        color: $color-light-gray;
-        font-weight: 500;
-        margin-bottom: 5px;
+      .character-location-container {
+        margin-bottom: $margin-bottom-text;
+        .location-title {
+          color: $color-light-gray;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
       }
     }
   }

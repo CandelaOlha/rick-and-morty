@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./components/layouts/MainLayout";
 import Characters from "./components/Characters";
+import CharacterDetails from "./components/CharacterDetails";
 import PageNotFound from "./components/PageNotFound";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />} path="/">
           <Route element={<Characters />} path="/"></Route>
+          <Route element={<CharacterDetails />} path="/characters/:name"></Route>
         </Route>
         <Route element={<PageNotFound />} path="*"></Route>
       </Routes>
