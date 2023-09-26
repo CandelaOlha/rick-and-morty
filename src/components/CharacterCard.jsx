@@ -14,7 +14,7 @@ const CharacterCard = ({ character }) => {
   };
 
   return (
-    <Link to={`/characters/${character.name}`} className="character-card-link">
+    <Link to={`/characters/${character.id}`} className="character-card-link">
       <article className="character-card">
         <img
           className="character-image"

@@ -1,0 +1,52 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset";
+
+.character-details-container {
+  align-items: center;
+  background-color: $color-background;
+  display: flex;
+  justify-content: center;
+  .character-details {
+    color: $color-dark-gray;
+    display: flex;
+    margin: 60px;
+    .character-image {
+      border-radius: $border-radius;
+      margin-right: 40px;
+    }
+    .character-name {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .character-status-container {
+      border-radius: $border-radius;
+      color: $color-light;
+      margin-bottom: 20px;
+      padding: 16px;
+    }
+    .alive {
+      background-color: $color-alive;
+    }
+    .dead {
+      background-color: $color-dead;
+    }
+    .unknown {
+      background-color: $color-unknown;
+    }
+    .character-info-text {
+      line-height: 1.8;
+    }
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 680px) {
+  .character-details {
+    flex-direction: column;
+  }
+  .character-image {
+    margin: 0 0 20px 0;
+  }
+}
