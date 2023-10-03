@@ -27,8 +27,8 @@ const CharacterDetails = () => {
       <div className="character-details">
         <img
           className="character-image"
-          src={character.image}
-          alt={character.name}
+          src={`${character.image}`}
+          alt={`${character.name}`}
         />
         <div className="character-info">
           <h3 className="character-name">{character.name}</h3>
@@ -43,12 +43,12 @@ const CharacterDetails = () => {
           <p className="character-info-text">
             <b>Gender:</b> {character.gender}
           </p>
-          <p className="character-info-text">
+          {/* <p className="character-info-text">
             <b>Origin:</b> {character.origin.name}
           </p>
           <p className="character-info-text">
             <b>Location:</b> {character.location.name}
-          </p>
+          </p> */}
         </div>
       </div>
     </article>
